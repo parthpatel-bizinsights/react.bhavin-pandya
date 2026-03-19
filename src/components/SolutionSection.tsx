@@ -36,7 +36,7 @@ const serviceKeys = [
     titleKey: "solutions.s2.title",
     descKey: "solutions.s2.desc",
     accent: "from-amber-500/20 to-yellow-500/20",
-    image: YANTRA_IMAGE,
+    image: "/shree_yantra.webp",
   },
   {
     icon: Triangle,
@@ -177,7 +177,7 @@ export default function SolutionSection() {
                 <img
                   src={service.image}
                   alt={t(service.titleKey)}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-fill group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent" />
                 <div className="absolute top-3 left-3 sm:top-4 sm:left-4 w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-[#1B2A4A]/90 backdrop-blur-sm flex items-center justify-center group-hover:bg-[#D4AF37] transition-colors duration-300">
@@ -217,19 +217,19 @@ export default function SolutionSection() {
               title={t("solutions.video1.title")}
               description={t("solutions.video1.desc")}
               thumbnail={RITUAL_IMAGE}
-              videoUrl="/screenrec.mp4"
+              videoUrl="/video1.mp4"
             />
             <VideoCard
               title={t("solutions.video2.title")}
               description={t("solutions.video2.desc")}
               thumbnail={ENERGY_WAVE_IMAGE}
-              videoUrl="/screenrec.mp4"
+              videoUrl="/video2.mp4"
             />
             <VideoCard
               title={t("solutions.video3.title")}
               description={t("solutions.video3.desc")}
               thumbnail={HEALING_STONES_IMAGE}
-              videoUrl="/screenrec.mp4"
+              videoUrl="/video.mp4"
             />
           </div>
         </div>
